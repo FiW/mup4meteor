@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN \
 	apt-get update &&\
 	apt-get -y dist-upgrade &&\
-	apt-get -y install build-essential curl python &&\
+	apt-get -y install build-essential curl python git &&\
 	apt-get clean &&\
 	rm -rf /var/lib/apt/lists/*
 
