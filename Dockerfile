@@ -20,4 +20,5 @@ RUN \
     git clone https://github.com/FiW/meteor-up.git &&\
     cd meteor-up &&\
     meteor npm install &&\
+    meteor nofat make &&\
     meteor npm link
