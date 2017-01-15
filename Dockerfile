@@ -12,13 +12,5 @@ RUN \
 ENV METEOR_VERSION 1.4.2.3
 
 RUN \
-	curl https://install.meteor.com/?release=${METEOR_VERSION} | sh
-
-RUN \
-    meteor npm install -g nofat &&\
-    cd /usr/src &&\
-    git clone https://github.com/FiW/meteor-up.git &&\
-    cd meteor-up &&\
-    meteor npm install &&\
-    meteor nofat make &&\
-    meteor npm link
+	curl https://install.meteor.com/?release=${METEOR_VERSION} | sh &&\
+	meteor npm install -g mup
