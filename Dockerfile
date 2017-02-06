@@ -14,4 +14,4 @@ ENV METEOR_VERSION 1.4.2.3
 RUN \
 	curl https://install.meteor.com/?release=${METEOR_VERSION} | sh &&\
 	meteor npm i -g --unsafe-perm yarn &&\
-	meteor yarn add mup -g
+	meteor yarn global add mup
