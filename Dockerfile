@@ -9,7 +9,7 @@ RUN \
 	apt-get clean &&\
 	rm -rf /var/lib/apt/lists/*
 
-ENV METEOR_VERSION 1.4.2.6
+ENV METEOR_VERSION 1.4.2.7
 
 RUN \
 	curl https://install.meteor.com/?release=${METEOR_VERSION} | sh &&\
