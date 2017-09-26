@@ -1,4 +1,4 @@
-FROM debian:8.7
+FROM debian:9.1
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -9,7 +9,7 @@ RUN \
 	apt-get clean &&\
 	rm -rf /var/lib/apt/lists/*
 
-ENV METEOR_VERSION 1.4.4.2
+ENV METEOR_VERSION 1.5.2.1
 
 RUN \
 	curl https://install.meteor.com/?release=${METEOR_VERSION} | sh &&\
